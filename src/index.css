@@ -1,3 +1,35 @@
-@import 'tailwindcss/dist/base.css';
-@import 'tailwindcss/dist/components.css';
-@import 'tailwindcss/dist/utilities.css';
+/*!*@import 'tailwindcss/dist/base.css';*!*/
+/*!*@import 'tailwindcss/dist/components.css';*!*/
+/*!*@import 'tailwindcss/dist/utilities.css';*!*/
+
+#app{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#app>div{
+    text-align: center;
+    border: 1px solid black;
+    margin: 5px;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+}
+
+#app>div>div{
+    padding-bottom: 5px;
+}
+#app>div:hover{
+    transform: translate(0, -5%);
+    transition-duration: .4s;
+}
+
+.text-center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-center h3{
+    font-size: 3rem;
+}
